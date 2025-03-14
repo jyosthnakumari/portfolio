@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 105%;
+        }
+        body {
+            background: #080808;
+            color: #f3eded;
+            text-align: center;
+            font-size: 109%;
+        }
+        header {
+            background: #fa65b7;
+            padding: 15px;
+        }
+        .logo {
+            font-size: 3rem;
+            font-family: 'Times New Roman', Times, serif,  cursive;
+            color: rgb(14, 12, 12);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 10px 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(14, 13, 13);
+            font-size: 1.3rem;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f6f4f1;
+        }
+        .intro-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .intro-text {
+            color: #fdfafc;
+            max-width: 500px;
+            text-align: left;
+        }
+        .profile img {
+            width: 200px;
+            border-radius: 50%;
+        }
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+            padding: 80px 20px;
+        }
+        .about-text {
+            color: #fa65b7;
+            max-width: 500px;
+            justify-content: center;
+            text-align: center;
+            justify-content: space-between
+        }
+        .profile img {
+            width: 285px;
+            border-radius: 90%;
+        }
+        .resume-button {
+            margin-top: 20px;
+            display: inline-table;
+            padding: 10px 20px;
+            background: #fa65b7;
+            color: rgb(14, 14, 14);
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        section {
+            padding: 50px 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .grid-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 2px;
+        }
+        .grid-item {
+            background: #fa65b7;
+            color: #080808;
+            width: 100px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+        .large-grid-item {
+            color: black;
+            width: 200px;
+            height: 150px;
+        }
+        .grid-item img {
+            width: 100px;
+            height: 53px;
+        }
+        .contact-box {
+            background: #fa65b7;
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .contact-box img {
+            width: 50px;
+            height: 50px;
+        }
+        footer {
+            background: #fa65b7;
+            color: rgb(15, 15, 15);
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">Portfolio</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#internships">Internships</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="intro-container">
+        <div class="profile">
+            <img src="https://ik.imagekit.io/m499gnsbq/images/IMG_20250314_175244.jpg?updatedAt=1741954996935" alt="Profile Picture">
+        </div>
+        <div class="intro-text">
+            <h2>Welcome!</h2>
+            <br>
+            <p>I'm Jyosthna Kumari, pursuing my studies in Computer Science and Engineering with Data Science specialization at Sasi Institute of Technology and Engineering.
+            I’m a tech enthusiast who loves exploring the world of data and building interactive web applications and always excited to learn new technologies and build innovative solutions.Dive into my portfolio, Check out my work and let’s connect!" </p>
+            <a href="https://ik.imagekit.io/m499gnsbq/images/jyosthna's%20Resume-hackerresume.pdf?updatedAt=1741954803916" class="resume-button">View Resume</a>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h1>About Me</h1>
+        <br>
+        <p>"I am an aspiring Data Analyst with a strong passion for extracting meaningful insights from data. With a background in computer science, I have honed my skills in 
+            Python, SQL, and various data visualization tools. My interest in technology extends beyond data science, as I also enjoy front-end web development, creating interactive and user-friendly web applications.
+             I thrive on solving complex problems and continuously learning new technologies to stay ahead in this ever-evolving field."</p>
+    </section>
+    
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <br>
+        <br>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="https://ik.imagekit.io/m499gnsbq/images/html.png?updatedAt=1733999206825" alt="HTML">
+               
+            </div>
+            <div class="grid-item">
+                <img src="https://ik.imagekit.io/m499gnsbq/images/css.png?updatedAt=1733999206906" alt="CSS">
+                
+            </div>
+            <div class="grid-item">
+                <img src="https://ik.imagekit.io/m499gnsbq/images/js.png?updatedAt=1733999278115" alt="JavaScript">
+                
+            </div>
+            <div class="grid-item">
+                <img src="https://ik.imagekit.io/m499gnsbq/images/python.png?updatedAt=1733999206926" alt="Python">
+              
+            </div>
+            <div class="grid-item">
+                <img src="https://ik.imagekit.io/m499gnsbq/images/icons8-java-94.png?updatedAt=1741971409301" alt="Java">
+                
+            </div>
+            <div class="grid-item">
+                <img src="https://ik.imagekit.io/m499gnsbq/images/sql-server_17525088.png?updatedAt=1741970619153" alt="SQL">
+               
+            </div>
+            <div class="grid-item">
+                <img src="https://ik.imagekit.io/m499gnsbq/images/mongo.png?updatedAt=1733999245345" alt="MongoDB">
+                
+            </div>
+        </div>
+    </section>
+    
+    <section id="certifications">
+        <h1>Certifications</h1>
+        <div class="grid-container">
+            <div class="grid-item large-grid-item"><a href="https://ik.imagekit.io/m499gnsbq/images/Screenshot%202025-03-03%20101400.png?updatedAt=1740979240276">Python for Data Science</a></div>
+            <div class="grid-item large-grid-item"><a href="https://ik.imagekit.io/m499gnsbq/images/deliotte%20cert.pdf?updatedAt=1740978947878">Data Analytics Job Simulation</a></div>
+            <div class="grid-item large-grid-item"><a href="https://ik.imagekit.io/m499gnsbq/images/mongo%20cert.pdf?updatedAt=1740978983761">MongoDB</a></div>
+            <div class="grid-item large-grid-item"><a href="https://ik.imagekit.io/m499gnsbq/images/html%20cert.pdf?updatedAt=1740978977093">HTML</a></div>
+            <div class="grid-item large-grid-item"><a href="https://ik.imagekit.io/m499gnsbq/images/css%20cert.pdf?updatedAt=1740978966799">CSS</a></div>
+        </div>
+    </section>
+    
+    <section id="internships">
+        <h1>Internships</h1>
+        <div class="grid-container">
+            <div class="grid-item large-grid-item"><a href="https://ik.imagekit.io/m499gnsbq/images/edu%20android%20dev%20cert.pdf?updatedAt=1740978998303">Android Developer </a></div>
+            <div class="grid-item large-grid-item"><a href="https://ik.imagekit.io/m499gnsbq/images/skilldezire.cert.pdf?updatedAt=1741176895921">Machine Learning</a></div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="grid-container">
+            <div class="grid-item large-grid-item"><a href="https://jyosthnakumari.github.io/Loan-EMI-Calculator">Loan EMI Calculator</a></div>
+            <div class="grid-item large-grid-item"><a href="https://jyosthnakumari.github.io/Data-Visualization-Dashboard">Data Visualization Dashboard</a></div>
+        </div>
+    </section>
+   
+    <section id="contact">
+        <h2>Contact</h2>
+        <br>
+        <div class="contact-box">
+            <a href="mailto:jyosthnakumari24@gmail.com"><img src="https://ik.imagekit.io/m499gnsbq/images/icons8-email-48.png?updatedAt=1741972863560" alt="Email"></a>
+            <a href="www.linkedin.com/in/jyosthna-kumari-jujjuvarapu-1275b7280"><img src="https://ik.imagekit.io/m499gnsbq/images/icons8-linkedin-50.png?updatedAt=1741973231769" alt="LinkedIn"></a>
+            <a href="https://github.com/jyosthnakumari"><img src="https://ik.imagekit.io/m499gnsbq/images/icons8-github-64.png?updatedAt=1741972912054" alt="GitHub"></a>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 jyosthnakumari.
+    </footer>
+</body>
+</html>
